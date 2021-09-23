@@ -1,0 +1,11 @@
+.main {
+    display: inline-block;
+
+    &__heading {
+        display: inline-block;
+
+        &-title {
+            margin: 1em 0px 0px;
+        }
+    }
+}

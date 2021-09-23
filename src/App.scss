@@ -1,9 +1,21 @@
 .App {
-    text-align: center;
+    display: flex;
+    // text-align: center;
+    width: 100vw;
+    // overflow-x: auto;
+
+
+    &__nav {
+        width: 500px;
+        border: 2px solid black ;
+    }
+
+    &__content {
+        text-align: center;
+        border: 2px solid blue ;
+
+    }
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
+
 

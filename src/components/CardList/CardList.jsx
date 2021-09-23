@@ -7,9 +7,9 @@ const CardList = (props) => {
     const { beersToDisplay } = props;
     
     return (
-        <>
+        <div className="cardList">
             {beersToDisplay.map((beer) => ( <Card beer= {beer} />) )}
-        </>
+        </div>
     )
 }
 

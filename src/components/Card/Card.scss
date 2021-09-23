@@ -1,0 +1,79 @@
+.card {
+    display: inline-block;
+    padding: 0px;
+    margin: 10px;
+    border: 3px solid orange;
+    width: 20rem;
+    height: 39rem;
+    background: linear-gradient(to right, rgb(207, 210, 243), rgb(224, 234, 252));
+    box-shadow: rgb(0 0 0 / 14%) 2px 2px 15px 1px;
+    border-radius: 20px;
+    overflow: auto;
+
+    &__img {
+        width: 5rem;
+        height: 20rem;
+    }
+
+    &__heading {
+        display: block;
+    }
+
+    &__name {
+		margin: 1em 0px 0px;
+        color: rgb(54, 57, 61);
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    &__tagline {
+        margin: 0px;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    &__figures {
+        margin: 1em 0px;
+        display: block;
+    }
+
+    &__description {
+        text-align: left;
+		font-size: 0.86em;
+		border-radius: 5px;
+		font-weight: 600;
+		line-height: 1.4em;
+		overflow: auto;
+		color: purple;
+		padding-right: 10px;
+        padding-left: 10px;
+        height: 10rem;
+        border: 2px solid black;
+        // overflow-y: auto;
+    }
+}
+
+.card__figure {
+        display: inline-block;
+        background-color: rgb(207, 210, 243);
+        border-radius: 15px;
+        margin-right: 1.5em;
+        padding: 0.5em 0.3em;
+        min-width: 50px;
+        font-size: 0.7em;
+
+    &-label {
+        text-align: center;
+        letter-spacing: 2px;
+        opacity: 0.75;
+    }
+
+    &-value {
+        font-size: 1.75em;
+        text-align: center;
+        font-weight: bold;
+        margin: 0px;
+    }
+}
+
+
