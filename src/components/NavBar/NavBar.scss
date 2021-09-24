@@ -1,3 +1,40 @@
 .navbar {
     display: inline-block;
+
+    &__searchbox {
+        position:relative;
+        width:50%;
+        margin:20px 0;
+        padding:0;
+
+        &-input {
+            position: relative;
+            width:100%;
+            border:none;
+            border: 1px solid gray;
+            border-radius:5px;
+            padding: 10px 20px;
+            // font-size:22px;
+            color:gray;
+        }
+
+
+
+        &-label{
+            display:inline-block;
+            padding:0 5px;
+            font-size:22px;
+            transition: all 0.4s ease;
+            transform: translateX(19px) translateY(-64px);
+            opacity:1;
+            background-color:#fff;
+        }
+    }
+}
+
+.navbar__searchbox-input:placeholder-shown + .navbar__searchbox-label{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(19px) translateY(-28px);
+    transition: all .4s ease;
 }

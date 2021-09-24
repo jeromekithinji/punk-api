@@ -22,10 +22,9 @@ function App() {
 
     const searchBeer = (e) => {
         e.preventDefault(); 
-        // e.target.value ? setSearchResults(beersToDisplay.filter(beer => beer.name.includes(`${e.target.value[0].toUpperCase()}${e.target.value.split("").splice(1, e.target.value.length).join("")}`))) : setSearchResults(searchResults => searchResults = []); 
-        const searchedBeer = beersToDisplay.filter(beer => beer.name.includes(`${e.target.value[0].toUpperCase()}${e.target.value.split("").splice(1, e.target.value.length).join("")}`)); 
-        setBeersToDisplay(searchedBeer);
+        e.target.value ? setBeersToDisplay(beersToDisplay.filter(beer => beer.name.includes(`${e.target.value[0].toUpperCase()}${e.target.value.split("").splice(1, e.target.value.length).join("")}`))) : getBeerData(); 
     };
+
 
     const getYearBrewed = (beer) => {
         const dateBrewed = beer.first_brewed;
