@@ -1,11 +1,40 @@
+// @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+// $font: 'Lato', sans-serif;
+$font: 'Play', sans-serif;
+
 .main {
     display: inline-block;
 
     &__heading {
+        font-family: $font;
         display: inline-block;
+        margin-bottom: 20px;
 
         &-title {
-            margin: 1em 0px 0px;
+            font-family: $font;
+            margin: 0.5em 0px 0px;
+            font-size: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+
+        &__heading-title {
+            font-weight: 200px;
+            font-size:x-large;
+            // font: inherit;
+        }
+
+        &__heading-subheading {
+            font-style: italic;
+            font-weight: 50;
+            font-size: medium;
+
+            // font: inherit;
         }
     }
 }

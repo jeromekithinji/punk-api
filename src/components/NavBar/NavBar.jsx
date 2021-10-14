@@ -11,7 +11,7 @@ const NavBar = (props) => {
         <div className="navbar">
             <div className="navbar__searchbox">
                 <input placeholder="Search for a beer..." type="text" onInput={searchBeer} className="navbar__searchbox-input" />
-                <label for="" class="navbar__searchbox-label">Search for a beer </label>
+                {/* <label for="" class="navbar__searchbox-label">Search for a beer </label> */}
             </div>
             <FiltersList toggleAbv= {toggleAbv} toggleClassic= {toggleClassic} toggleAcidity= {toggleAcidity} />
         </div>

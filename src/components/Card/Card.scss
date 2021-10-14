@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans+Display&family=Play:wght@700&display=swap');
+
+$font:'Gruppo', cursive;
+$font2: 'Noto Sans Display', sans-serif;
+
+
 .card {
     display: inline-block;
     padding: 0px;
     margin: 10px;
-    border: 3px solid orange;
+    // border: 3px solid orange;
     width: 20rem;
     height: 39rem;
     background: linear-gradient(to right, rgb(207, 210, 243), rgb(224, 234, 252));
@@ -24,12 +30,14 @@
         color: rgb(54, 57, 61);
         font-size: 2em;
         font-weight: bold;
+        font-family: $font;
     }
 
     &__tagline {
         margin: 0px;
         font-size: 1.25em;
         font-weight: bold;
+        font-family: $font2;
     }
 
     &__figures {
@@ -48,6 +56,7 @@
 		padding-right: 10px;
         padding-left: 10px;
         height: 7rem;
+
         // border: 2px solid black;
         // overflow-y: auto;
     }

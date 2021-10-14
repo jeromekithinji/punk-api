@@ -1,9 +1,10 @@
 .navbar {
     display: inline-block;
+    margin-left: 20px;
 
     &__searchbox {
         position:relative;
-        width:50%;
+        width:80%;
         margin:20px 0;
         padding:0;
 
@@ -23,7 +24,7 @@
         &-label{
             display:inline-block;
             padding:0 5px;
-            font-size:22px;
+            font-size:5px;
             transition: all 0.4s ease;
             transform: translateX(19px) translateY(-64px);
             opacity:1;
@@ -32,9 +33,9 @@
     }
 }
 
-.navbar__searchbox-input:placeholder-shown + .navbar__searchbox-label{
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(19px) translateY(-28px);
-    transition: all .4s ease;
-}
+// .navbar__searchbox-input:placeholder-shown + .navbar__searchbox-label{
+//     visibility: hidden;
+//     opacity: 0;
+//     transform: translateX(19px) translateY(-28px);
+//     transition: all .4s ease;
+// }

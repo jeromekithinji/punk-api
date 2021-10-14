@@ -7,8 +7,8 @@ const FilterItem = (props) => {
 
     return (
         <div>
-            <label for = {`filter__${filterAttribute}`} > {filterLabel} </label>
             <input type="checkbox" id={`filter__${filterAttribute}`} name={`filter__${filterAttribute}`} className={`filter__${filterAttribute}`} value={`${filterAttribute}`} onClick={clicked}/>
+            <label for = {`filter__${filterAttribute}`} > {filterLabel} </label>
         </div>
     )
 }

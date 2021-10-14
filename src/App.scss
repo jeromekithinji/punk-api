@@ -1,19 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .App {
     display: flex;
     // text-align: center;
-    width: 100vw;
+    // width: 100vw;
+    height: 100%;
     // overflow-x: auto;
-
+    background-color: #E6E6FA;
+    // background: rgb(255,235,69);
+    // background-image: 
+    //     radial-gradient(circle, rgb(255, 203, 34) 10%, rgb(218, 160, 3) 70%, rgb(192, 126, 4) 100%);
+    overflow: auto;
 
     &__nav {
-        width: 500px;
+        position: fixed;
+        height: 100vh;
+        // width: 30rem;
+        // width: 20%;
         border: 2px solid black ;
     }
 
     &__content {
+        width: 90rem;
+        margin-left: 18.3%;
+        // width: 80%;
+        height: 100%;
         text-align: center;
         border: 2px solid blue ;
 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+        display: inline-block;
+        width: 100vw;
+
+        &__nav {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            width: inherit;
+        }
+
+        &__content {
+            width: inherit;
+        }
     }
 }
 
