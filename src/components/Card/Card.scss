@@ -3,12 +3,10 @@
 $font:'Gruppo', cursive;
 $font2: 'Noto Sans Display', sans-serif;
 
-
 .card {
     display: inline-block;
     padding: 0px;
     margin: 10px;
-    // border: 3px solid orange;
     width: 20rem;
     height: 39rem;
     background: linear-gradient(to right, rgb(207, 210, 243), rgb(224, 234, 252));
@@ -56,9 +54,6 @@ $font2: 'Noto Sans Display', sans-serif;
 		padding-right: 10px;
         padding-left: 10px;
         height: 7rem;
-
-        // border: 2px solid black;
-        // overflow-y: auto;
     }
 }
 

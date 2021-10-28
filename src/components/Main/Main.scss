@@ -1,7 +1,5 @@
-// @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
-// $font: 'Lato', sans-serif;
 $font: 'Play', sans-serif;
 
 .main {
@@ -11,6 +9,7 @@ $font: 'Play', sans-serif;
         font-family: $font;
         display: inline-block;
         margin-bottom: 20px;
+        color: white;
 
         &-title {
             font-family: $font;
@@ -26,15 +25,12 @@ $font: 'Play', sans-serif;
         &__heading-title {
             font-weight: 200px;
             font-size:x-large;
-            // font: inherit;
         }
 
         &__heading-subheading {
             font-style: italic;
             font-weight: 50;
             font-size: medium;
-
-            // font: inherit;
         }
     }
 }

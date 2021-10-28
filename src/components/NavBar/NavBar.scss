@@ -19,8 +19,6 @@
             color:gray;
         }
 
-
-
         &-label{
             display:inline-block;
             padding:0 5px;
@@ -32,10 +30,3 @@
         }
     }
 }
-
-// .navbar__searchbox-input:placeholder-shown + .navbar__searchbox-label{
-//     visibility: hidden;
-//     opacity: 0;
-//     transform: translateX(19px) translateY(-28px);
-//     transition: all .4s ease;
-// }
